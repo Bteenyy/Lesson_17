@@ -7,11 +7,17 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 
 public class CareersPage {
-    SelenideElement careersPage = $(".container").$(byText("Careers"));
+    SelenideElement careersPage = $(".container").$(byText("Careers")),
+            jobsContent = $(".jobs-content__roles");
 
     public CareersPage openCareersPage() {
         careersPage.click();
         $("#preview-block").shouldHave(text("Careers at Scalable Solutions"));
+        return this;
+    }
+
+    public CareersPage careersCategory(String category) {
+        jobsContent.shouldHave(text(category));
         return this;
     }
 }
