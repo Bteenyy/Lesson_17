@@ -9,8 +9,8 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class MainPage {
     SelenideElement blockTitle = $(".products-slider-block__title"),
-            navigationList = $(".navigation__list"),
-            newsPage = $(".container").$(byText("Blog"));
+            navigationList = $(".navigation__list");
+
 
     public MainPage openPage() {
         open("");
@@ -23,10 +23,6 @@ public class MainPage {
         return this;
     }
 
-    public MainPage openNewsPage() {
-        newsPage.click();
-        $(".news-content").shouldHave(text("Our Blog"));
-        return this;
-    }
+
 
 }
