@@ -17,11 +17,11 @@
 <img width="6%" title="Java" src="media/logo/Java.svg">
 <img width="6%" title="Selenide" src="media/logo/Selenide.svg">
 <img width="6%" title="Selenoid" src="media/logo/Selenoid.svg">
-<img width="6%" title="Allure Report" src="media/logo/Allure_Report.svg">
-<img width="5%" title="Allure TestOps" src="media/logo/AllureTestOps.svg">
-<img width="6%" title="Gradle" src="media/logo/Gradle.svg">
+<img width="6%" title="Allure Report" src="media/Allure.svg">
+<img width="5%" title="Allure TestOps" src="media/Allure_TO.svg">
+<img width="6%" title="Gradle" src="media/Gradle.svg">
 <img width="6%" title="JUnit5" src="media/logo/JUnit5.svg">
-<img width="6%" title="GitHub" src="media/logo/GitHub.svg">
+<img width="6%" title="GitHub" src="media/GitHub.svg">
 <img width="6%" title="Jenkins" src="media/logo/Jenkins.svg">
 <img width="6%" title="Telegram" src="media/logo/Telegram.svg">
 <img width="5%" title="Jira" src="media/logo/Jira.svg">
