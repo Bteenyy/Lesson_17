@@ -22,8 +22,8 @@ public class MainPage {
         navigationList.shouldHave(text(header));
         return this;
     }
-    public MainPage putSearchBar() {
-       searchForm.setValue("Privacy policy").pressEnter();
+    public MainPage putSearchBar(String word) {
+       searchForm.setValue(word).pressEnter();
         return this;
     }
 
