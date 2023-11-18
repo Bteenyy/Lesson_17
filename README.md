@@ -31,8 +31,8 @@
 - Cборщик - [Gradle](https://gradle.org/). 
 - [JUnit 5](https://junit.org/junit5/) задействован в качестве фреймворка модульного тестирования.
 - При прогоне тестов для запуска браузеров используется [Selenoid](https://aerokube.com/selenoid/).
-- Для удаленного запуска реализована джоба в [Jenkins](https://www.jenkins.io/) с формированием Allure-отчета и отправкой результатов в <code>Telegram</code> при помощи бота.
-- Так же реализована интеграция с <code>Allure TestOps</code> и <code>Jira</code>.
+- Для удаленного запуска реализована джоба в [Jenkins](https://www.jenkins.io/) с формированием [Allure-отчета](https://allurereport.org/) и отправкой результатов в [Telegram](https://telegram.org/) при помощи бота.
+- Так же реализована интеграция с [Allure TestOps](https://qameta.io/) и  [Jira](https://www.atlassian.com/ru/software/jira)
 
 Содержание Allure-отчета:
 * Шаги теста;
