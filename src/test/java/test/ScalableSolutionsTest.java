@@ -27,9 +27,15 @@ public class ScalableSolutionsTest extends TestBase {
     @ParameterizedTest(name = "В слайде присутствует {1} для выбора заголовка {0}")
     @Tag("simple")
     void progressSlider(String value, String result) {
-        step("Open page", () -> { mainPage.openPage();});
-        step("Put value", () -> {  mainPage.chooseProgress(value);});
-        step("Check result", () -> { mainPage.resultSlider(result);});
+        step("Open page", () -> {
+            mainPage.openPage();
+        });
+        step("Put value", () -> {
+            mainPage.chooseProgress(value);
+        });
+        step("Check result", () -> {
+            mainPage.resultSlider(result);
+        });
     }
 
     @CsvSource(value = {
@@ -40,35 +46,64 @@ public class ScalableSolutionsTest extends TestBase {
     @ParameterizedTest(name = "В поисковой выдаче присутствует {1} для запроса {0}")
     @Tag("simple")
     void searchBar(String value, String result) {
-        mainPage.openPage()
-                .putSearchBar(value);
-        searchResultsPage.checkResult(result);
+        step("Open page", () -> {
+            mainPage.openPage();
+        });
+        step("Put value", () -> {
+            mainPage.putSearchBar(value);
+        });
+        step("Check result", () -> {
+            searchResultsPage.checkResult(result);
+        });
+
+
     }
 
     @ValueSource(strings = {"Products and Services", "Sectors", "Blog", "Team", "Careers"})
     @ParameterizedTest(name = "В навигационном панели присутствует элемент {0} для запроса {0}")
     @Tag("simple")
     void mainPageTest(String header) {
-        mainPage.openPage()
-                .navigationHeader(header);
+        step("Open page", () -> {
+            mainPage.openPage();
+        });
+        step("Check element", () -> {
+            mainPage.navigationHeader(header);
+        });
+
     }
 
     @ValueSource(strings = {"All", "Blog", "Industry Reports", "Media", "Product News"})
     @ParameterizedTest(name = "В навигационном панели присутствует элемент {0} для запроса {0}")
     @Tag("simple")
     void newsPageTest(String category) {
-        mainPage.openPage();
-        newsPage.openNewsPage()
-                .blogCategory(category);
+        step("Open page", () -> {
+            mainPage.openPage();
+        });
+        step("Open news page", () -> {
+            newsPage.openNewsPage();
+        });
+        step("Check element", () -> {
+            newsPage.blogCategory(category);
+        });
+
+
     }
 
     @ValueSource(strings = {"All", "Design", "Development/QA", "Managerial", "System support"})
     @ParameterizedTest(name = "В навигационном панели вкладки Careers присутствует {0} для запроса {0}")
     @Tag("simple")
     void careersPageTest(String category) {
-        mainPage.openPage();
-        careersPage.openCareersPage()
-                .careersCategory(category);
+        step("Open page", () -> {
+            mainPage.openPage();
+        });
+        step("Open careers page", () -> {
+            careersPage.openCareersPage();
+        });
+        step("Check element", () -> {
+            careersPage.careersCategory(category);
+        });
+
+
     }
 
 }
