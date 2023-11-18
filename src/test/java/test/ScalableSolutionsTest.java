@@ -1,7 +1,5 @@
 package test;
 
-import com.codeborne.selenide.Condition;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -10,13 +8,24 @@ import page.MainPage;
 import page.NewsPage;
 import page.SearchResultsPage;
 
-import static com.codeborne.selenide.Selenide.$;
-
 public class ScalableSolutionsTest extends TestBase {
     MainPage mainPage = new MainPage();
     NewsPage newsPage = new NewsPage();
     CareersPage careersPage = new CareersPage();
     SearchResultsPage searchResultsPage = new SearchResultsPage();
+
+    @CsvSource(value = {
+            "Scalable Exchange Platform, Our exchange tech is the industry flagship with speed and",
+            "Scalable Custodial Wallet, User-friendly, secure, with your brand at the forefront.",
+            "Scalable Custody, The custody module provides the highest",
+            "Scalable Liquidity, Brokers, instant exchanges, retail traders,"
+    })
+    @ParameterizedTest(name = "В слайде присутствует {1} для выбора заголовка {0}")
+    void progressSlider(String value, String result) {
+        mainPage.openPage()
+                .chooseProgress(value)
+                .resultSlider(result);
+    }
 
     @CsvSource(value = {
             "Privacy Policy, Privacy Policy",
