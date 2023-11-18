@@ -9,30 +9,30 @@
 - [Интеграция с Jira](#-интеграция-с-jira)
 - [Уведомления в Telegram](#-уведомления-в-telegram)
 - [Видео примера запуска тестов в Selenoid](#-видео-примера-запуска-теста-в-selenoid)
-1
+- 
 ## :computer: Используемый стек
 
-<p align="center">
-<img width="6%" title="IntelliJ IDEA" src="media/Idea.svg">
-<img width="6%" title="Java" src="media/Java.svg">
-<img width="6%" title="Selenide" src="media/Selenide.svg">
-<img width="6%" title="Selenoid" src="media/Selenoid.svg">
-<img width="6%" title="Allure Report" src="media/Allure.svg">
-<img width="5%" title="Allure TestOps" src="media/Allure_TO.svg">
-<img width="6%" title="Gradle" src="media/Gradle.svg">
-<img width="6%" title="JUnit5" src="media/Junit5.svg">
-<img width="6%" title="GitHub" src="media/GitHub.svg">
-<img width="6%" title="Jenkins" src="media/Jenkins.svg">
-<img width="6%" title="Telegram" src="media/Telegram.svg">
-<img width="5%" title="Jira" src="media/Jira.svg">
+<p  align="center">
+<a href="https://www.jetbrains.com/idea/"><img width="5%" title="IntelliJ IDEA" src="media/Idea.svg"></a>
+<a href="https://www.java.com/"><img width="5%" title="Java" src="media/Java.svg"></a>
+<a href="https://selenoid.autotests.cloud/"><img width="5%" title="Selenoid" src="media/Selenoid.svg"></a>
+<a href="https://selenide.org/"><img width="5%" title="Selenide" src="media/Selenide.svg"></a>
+<a href="https://gradle.org/"><img width="5%" title="Gradle" src="media/Gradle.svg"></a>
+<a href="https://junit.org/junit5/"><img width="5%" title="Junit5" src="media/Junit5.svg"></a>
+<a href="https://github.com/"><img width="5%" title="GitHub" src="media/GitHub.svg"></a>
+<a href="https://allurereport.org/"><img width="5%" title="Allure Report" src="media/Allure.svg"></a>
+<a href="https://qameta.io/"><img width="5%" title="Allure TestOps" src="media/Allure_TO.svg"></a>
+<a href="https://www.jenkins.io/"><img width="5%" title="Jenkins" src="media/Jenkins.svg"></a>
+<a href="https://www.atlassian.com/ru/software/jira"><img width="5%" title="Jira" src="media/Jira.svg"></a>
+<a href="https://web.telegram.org/"><img width="5%" title="Telegram" src="media/Telegram.svg"></a>
 </p>
 
-- Тесты в данном проекте написаны на языке [Java](https://www.java.com/ru/) с использованием фреймворка для тестирования [Selenide](https://selenide.org/).
-- Cборщик - [Gradle](https://gradle.org/). 
-- [JUnit 5](https://junit.org/junit5/) задействован в качестве фреймворка модульного тестирования.
-- При прогоне тестов для запуска браузеров используется [Selenoid](https://aerokube.com/selenoid/).
-- Для удаленного запуска реализована джоба в [Jenkins](https://www.jenkins.io/) с формированием [Allure-отчета](https://allurereport.org/) и отправкой результатов в [Telegram](https://telegram.org/) при помощи бота.
-- Так же реализована интеграция с [Allure TestOps](https://qameta.io/) и  [Jira](https://www.atlassian.com/ru/software/jira)
+- Тесты в данном проекте написаны на языке `Java` с использованием фреймворка для тестирования `Selenide`.
+- Cборщик - `Gradle`. 
+- `JUnit 5` задействован в качестве фреймворка модульного тестирования.
+- При прогоне тестов для запуска браузеров используется `Selenoid`.
+- Для удаленного запуска реализована джоба в `Jenkins` с формированием `Allure-отчета` и отправкой результатов в `Telegram` при помощи бота.
+- Так же реализована интеграция с `Allure TestOps` и  `Jira`
 
 Содержание Allure-отчета:
 * Шаги теста;
