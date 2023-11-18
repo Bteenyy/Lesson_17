@@ -1,4 +1,4 @@
-package test;
+package tests;
 
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -25,7 +25,6 @@ public class ScalableSolutionsTest extends TestBase {
     })
 
     @ParameterizedTest(name = "В слайде присутствует {1} для выбора заголовка {0}")
-    @Tag("simple")
     void progressSlider(String value, String result) {
         step("Open page", () -> {
             mainPage.openPage();
@@ -44,7 +43,7 @@ public class ScalableSolutionsTest extends TestBase {
             "Careers, Leadership Team"
     })
     @ParameterizedTest(name = "В поисковой выдаче присутствует {1} для запроса {0}")
-    @Tag("simple")
+    @Tag("regress")
     void searchBar(String value, String result) {
         step("Open page", () -> {
             mainPage.openPage();
@@ -61,7 +60,7 @@ public class ScalableSolutionsTest extends TestBase {
 
     @ValueSource(strings = {"Products and Services", "Sectors", "Blog", "Team", "Careers"})
     @ParameterizedTest(name = "В навигационном панели присутствует элемент {0} для запроса {0}")
-    @Tag("simple")
+    @Tag("regress")
     void mainPageTest(String header) {
         step("Open page", () -> {
             mainPage.openPage();
@@ -74,7 +73,6 @@ public class ScalableSolutionsTest extends TestBase {
 
     @ValueSource(strings = {"All", "Blog", "Industry Reports", "Media", "Product News"})
     @ParameterizedTest(name = "В навигационном панели присутствует элемент {0} для запроса {0}")
-    @Tag("simple")
     void newsPageTest(String category) {
         step("Open page", () -> {
             mainPage.openPage();
@@ -91,7 +89,6 @@ public class ScalableSolutionsTest extends TestBase {
 
     @ValueSource(strings = {"All", "Design", "Development/QA", "Managerial", "System support"})
     @ParameterizedTest(name = "В навигационном панели вкладки Careers присутствует {0} для запроса {0}")
-    @Tag("simple")
     void careersPageTest(String category) {
         step("Open page", () -> {
             mainPage.openPage();
