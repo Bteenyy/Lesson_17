@@ -1,96 +1,100 @@
+# Проект по автоматизации тестовых сценариев для сайта компании [Scalable](https://scalablesolutions.io/)
+## Содержание:
 
-# [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Bungee+Spice&duration=3000&pause=1000&color=0F5F05&background=FA8EFF00&center=true&vCenter=true&multiline=true&repeat=false&random=false&width=435&height=80&lines=%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82+%D0%BF%D0%BE+%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8+%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D1%85+;%D1%81%D1%86%D0%B5%D0%BD%D0%B0%D1%80%D0%B8%D0%B5%D0%B2+%D0%B4%D0%BB%D1%8F+%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0+Scalable)](https://scalablesolutions.io)
+- [Используемый стек](#computer-используемый-стек)
+- [Запуск автотестов](#arrow_forward-запуск-автотестов)
+- [Сборка в Jenkins](#-сборка-в-jenkins)
+- [Пример Allure-отчета](#-пример-allure-отчета)
+- [Интеграция с Allure TestOps](#-интеграция-с-allure-testOps)
+- [Интеграция с Jira](#-интеграция-с-jira)
+- [Уведомления в Telegram](#-уведомления-в-telegram)
+- [Видео примера запуска тестов в Selenoid](#-видео-примера-запуска-теста-в-selenoid)
 
+## :computer: Используемый стек
 
-## Содержание
-- [Использованный стек технологий](#Использованный стек технологий)
-- [Запуск тестов из терминала](#начало-работы)
-- [Сборка в Jenkins](#тестирование)
-- [Пример Allure-отчета](#deploy-и-ci/cd)
-- [Уведомления в Telegram с использованием бота](#contributing)
-- [Видео примера запуска тестов в Selenoid](#to-do)
+<p align="center">
+<img width="6%" title="IntelliJ IDEA" src="media/logo/Intelij_IDEA.svg">
+<img width="6%" title="Java" src="media/logo/Java.svg">
+<img width="6%" title="Selenide" src="media/logo/Selenide.svg">
+<img width="6%" title="Selenoid" src="media/logo/Selenoid.svg">
+<img width="6%" title="Allure Report" src="media/logo/Allure_Report.svg">
+<img width="5%" title="Allure TestOps" src="media/logo/AllureTestOps.svg">
+<img width="6%" title="Gradle" src="media/logo/Gradle.svg">
+<img width="6%" title="JUnit5" src="media/logo/JUnit5.svg">
+<img width="6%" title="GitHub" src="media/logo/GitHub.svg">
+<img width="6%" title="Jenkins" src="media/logo/Jenkins.svg">
+<img width="6%" title="Telegram" src="media/logo/Telegram.svg">
+<img width="5%" title="Jira" src="media/logo/Jira.svg">
+</p>
 
-## Использованный стек технологий
-- [IntelliJ IDEA](https://www.jetbrains.com/ru-ru/idea/)
-- [Java](https://www.java.com/ru/)
-- [Selenide](https://selenide.org/)
-- [Selenoid](https://aerokube.com/selenoid/latest/)
-- [Allure Report](https://allurereport.org/)
-- [Allure Testops](https://qameta.io/)
-- [Gradle](https://gradle.org/)
-- [JUnit 5](https://junit.org/junit5/docs/current/user-guide/)
-- [GitHub](https://github.com/)
-- [Jenkins](https://www.jenkins.io/)
-- [Telegram](https://web.telegram.org/a/)
-- [Jira](https://www.atlassian.com/ru/software/jira)
+Тесты в данном проекте написаны на языке <code>Java</code> с использованием фреймворка для тестирования [Selenide](https://selenide.org/), сборщик - <code>Gradle</code>. <code>JUnit 5</code> задействован в качестве фреймворка модульного тестирования.
+При прогоне тестов для запуска браузеров используется [Selenoid](https://aerokube.com/selenoid/).
+Для удаленного запуска реализована джоба в <code>Jenkins</code> с формированием Allure-отчета и отправкой результатов в <code>Telegram</code> при помощи бота. Так же реализована интеграция с <code>Allure TestOps</code> и <code>Jira</code>.
 
-## Использование
-Расскажите как установить и использовать ваш проект, покажите пример кода:
+Содержание Allure-отчета:
+* Шаги теста;
+* Скриншот страницы на последнем шаге;
+* Page Source;
+* Логи браузерной консоли;
+* Видео выполнения автотеста.
 
-Установите npm-пакет с помощью команды:
-```sh
-$ npm i your-awesome-plugin-name
+## :arrow_forward: Запуск автотестов
+
+### Запуск тестов из терминала
 ```
-
-И добавьте в свой проект:
-```typescript
-import { hi } from "your-awesome-plugin-name";
-
-hi(); // Выведет в консоль "Привет!"
+gradle clean test -Dselenoid_url="selenoid.autotests.cloud/wd/hub" -Dbrowser_size="1920х1080" -Dbrowser="chrome" -Dbrowser_version="100.0"
 ```
+При выполнении данной команды в терминале IDE тесты запустятся удаленно в <code>Selenoid</code>.
 
-## Разработка
 
-### Требования
-Для установки и запуска проекта, необходим [NodeJS](https://nodejs.org/) v8+.
+## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logo/Jenkins.svg"> Сборка в Jenkins
 
-### Установка зависимостей
-Для установки зависимостей, выполните команду:
-```sh
-$ npm i
-```
+Для запуска сборки необходимо перейти в раздел <code>Собрать с параметрами</code> и нажать кнопку <code>Собрать</code>.
+<p align="center">
+<img title="Jenkins Build" src="media/screens/jenkins.png">
+</p>
+После выполнения сборки, в блоке <code>История сборок</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
 
-### Запуск Development сервера
-Чтобы запустить сервер для разработки, выполните команду:
-```sh
-npm start
-```
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logo/Allure_Report.svg"> Пример Allure-отчета
+### Overview
 
-### Создание билда
-Чтобы выполнить production сборку, выполните команду: 
-```sh
-npm run build
-```
+<p align="center">
+<img title="Allure Overview" src="media/screens/allure.png">
+</p>
 
-## Тестирование
-Какие инструменты тестирования использованы в проекте и как их запускать. Например:
+## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="media/logo/AllureTestOps.svg"> Интеграция с Allure TestOps
 
-Наш проект покрыт юнит-тестами Jest. Для их запуска выполните команду:
-```sh
-npm run test
-```
+На *Dashboard* в <code>Allure TestOps</code> видна статистика количества тестов: сколько из них добавлены и проходятся вручную, сколько автоматизированы. Новые тесты, а так же результаты прогона приходят по интеграции при каждом запуске сборки.
 
-## Deploy и CI/CD
-Расскажите, как развернуть приложение. Как запустить пайплайны и т.д.
+<p align="center">
+<img title="Allure TestOps DashBoard" src="media/screens/AllureTestOps.png">
+</p>
 
-## Contributing
-Как помочь в разработке проекта? Как отправить предложение или баг-репорт. Как отправить доработку (оформить pull request, какие стайлгайды используются). Можно вынести в отдельный файл — [Contributing.md](./CONTRIBUTING.md).
+### Результат выполнения автотеста
 
-## FAQ 
-Если потребители вашего кода часто задают одни и те же вопросы, добавьте ответы на них в этом разделе.
+<p align="center">
+<img title="Test Results in Alure TestOps" src="media/screens/allurResults.png">
+</p>
 
-### Зачем вы разработали этот проект?
-Чтобы был.
+## <img width="4%" style="vertical-align:middle" title="Jira" src="media/logo/Jira.svg"> Интеграция с Jira
 
-## To do
-- [x] Добавить крутое README
-- [ ] Всё переписать
-- [ ] ...
+Реализована интеграция <code>Allure TestOps</code> с <code>Jira</code>, в тикете отображается, какие тест-кейсы были написаны в рамках задачи и результат их прогона.
 
-## Команда проекта
-Оставьте пользователям контакты и инструкции, как связаться с командой разработки.
+<p align="center">
+<img title="Jira Task" src="media/screens/Jira.png">
+</p>
 
-- [Богдан Звягинцев](tg://resolve?domain=bzvyagintsev) — Front-End Engineer
+### <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
 
-## Источники
-Если вы чем-то вдохновлялись, расскажите об этом: где брали идеи, какие туториалы смотрели, ссылки на исходники кода. 
+После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне тестов.
+
+<p align="center">
+<img width="70%" title="Telegram Notifications" src="media/screens/Bot.png">
+</p>
+
+### <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/logo/Selenoid.svg"> Видео примера запуска тестов в Selenoid
+
+В отчетах Allure для каждого теста прикреплен не только скриншот, но и видео прохождения теста
+<p align="center">
+  <img title="Selenoid Video" src="media/screens/Video.gif">
+</p>
