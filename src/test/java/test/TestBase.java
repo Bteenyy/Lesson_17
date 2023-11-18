@@ -19,27 +19,27 @@ public class TestBase {
     @BeforeAll
     static void beforeAll() {
         Configuration.baseUrl = "https://scalablesolutions.io/";
-       // Configuration.browser = System.getProperty("browserName", "chrome");
+        Configuration.browser = System.getProperty("browserName", "chrome");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
-       // Configuration.browserVersion = System.getProperty("browserVersion", "100.0");
+        Configuration.browserVersion = System.getProperty("browserVersion", "100.0");
         Configuration.pageLoadStrategy = "eager";
-       // Configuration.remote = System.getProperty("selenoidAddress");
+        Configuration.remote = System.getProperty("selenoidAddress");
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 
-       // DesiredCapabilities capabilities = new DesiredCapabilities();
-       // capabilities.setCapability("selenoid:options", Map.<String, Object>of(
-       //         "enableVNC", true,
-         //       "enableVideo", true
-       // ));
-       // Configuration.browserCapabilities = capabilities;
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
+                "enableVNC", true,
+                "enableVideo", true
+        ));
+        Configuration.browserCapabilities = capabilities;
     }
 
-    //@AfterEach
-   // void addAttachments() {
-    //    Attach.screenshotAs("Last screenshot");
-    //    Attach.pageSource();
-     //   Attach.browserConsoleLogs();
-     //   Attach.addVideo();
-    //    closeWebDriver();
- //   }
+    @AfterEach
+    void addAttachments() {
+        Attach.screenshotAs("Last screenshot");
+        Attach.pageSource();
+        Attach.browserConsoleLogs();
+        Attach.addVideo();
+        closeWebDriver();
+    }
 }
