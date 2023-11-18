@@ -27,9 +27,12 @@
 <img width="5%" title="Jira" src="media/Jira.svg">
 </p>
 
-Тесты в данном проекте написаны на языке <code>Java</code> с использованием фреймворка для тестирования [Selenide](https://selenide.org/), сборщик - <code>Gradle</code>. <code>JUnit 5</code> задействован в качестве фреймворка модульного тестирования.
-При прогоне тестов для запуска браузеров используется [Selenoid](https://aerokube.com/selenoid/).
-Для удаленного запуска реализована джоба в <code>Jenkins</code> с формированием Allure-отчета и отправкой результатов в <code>Telegram</code> при помощи бота. Так же реализована интеграция с <code>Allure TestOps</code> и <code>Jira</code>.
+- Тесты в данном проекте написаны на языке [Java](https://www.java.com/ru/) с использованием фреймворка для тестирования [Selenide](https://selenide.org/).
+- Cборщик - [Gradle](https://gradle.org/). 
+- [JUnit 5](https://junit.org/junit5/) задействован в качестве фреймворка модульного тестирования.
+- При прогоне тестов для запуска браузеров используется [Selenoid](https://aerokube.com/selenoid/).
+- Для удаленного запуска реализована джоба в [Jenkins](https://www.jenkins.io/) с формированием Allure-отчета и отправкой результатов в <code>Telegram</code> при помощи бота.
+- Так же реализована интеграция с <code>Allure TestOps</code> и <code>Jira</code>.
 
 Содержание Allure-отчета:
 * Шаги теста;
