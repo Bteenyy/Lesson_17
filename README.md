@@ -20,7 +20,7 @@
 <img width="6%" title="Allure Report" src="media/Allure.svg">
 <img width="5%" title="Allure TestOps" src="media/Allure_TO.svg">
 <img width="6%" title="Gradle" src="media/Gradle.svg">
-<img width="6%" title="JUnit5" src="media/JUnit5.svg">
+<img width="6%" title="JUnit5" src="media/Junit5.svg">
 <img width="6%" title="GitHub" src="media/GitHub.svg">
 <img width="6%" title="Jenkins" src="media/Jenkins.svg">
 <img width="6%" title="Telegram" src="media/Telegram.svg">
