@@ -8,7 +8,8 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class MainPage {
     SelenideElement blockTitle = $(".products-slider-block__title"),
-            navigationList = $(".navigation__list");
+            navigationList = $(".navigation__list"),
+    searchForm=$(".searchform_input");
 
 
     public MainPage openPage() {
@@ -21,6 +22,9 @@ public class MainPage {
         navigationList.shouldHave(text(header));
         return this;
     }
-
+    public MainPage putSearchBar() {
+       searchForm.setValue("Privacy policy").pressEnter();
+        return this;
+    }
 
 }
