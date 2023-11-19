@@ -114,10 +114,10 @@ clean scalablesolutions_test
 </p>
 
 <a id="jira"></a>
-## <img alt="Allure" height="25" src="images/logo/Jira.svg" width="25"/></a> Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-682">Jira</a>
+## <img alt="Allure" height="25" src="media/Icons/Jira.svg" width="25"/></a> Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-965">Jira</a>
 ____
 <p align="center">  
-<img title="Jira" src="images/screen/jira.png" width="850">  
+<img title="Jira" src="media/Screen/Jira_report.png" width="850">  
 </p>
 
 <a id="telegram"></a>
