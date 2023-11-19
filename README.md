@@ -60,7 +60,7 @@ gradle clean test
 ## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/Icons/Allure.svg"> Пример Allure-отчета
 
 <p align="center">
-<img title="Allure Overview" src="media/Screen/allure_report.png">
+<img title="Allure Overview" src="media/Screen/Allure_report.png">
 </p>
 
 ## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="media/logo/AllureTestOps.svg"> Интеграция с Allure TestOps
