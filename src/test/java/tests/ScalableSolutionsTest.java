@@ -10,7 +10,7 @@ import page.NewsPage;
 import page.SearchResultsPage;
 
 import static io.qameta.allure.Allure.step;
-
+@Tag("Scalablesolutions")
 public class ScalableSolutionsTest extends TestBase {
     MainPage mainPage = new MainPage();
     NewsPage newsPage = new NewsPage();
@@ -40,7 +40,6 @@ public class ScalableSolutionsTest extends TestBase {
             "Blog, Top 5 Things to Know about Scalable Solutions",
     })
     @ParameterizedTest(name = "В поисковой выдаче присутствует {1} для запроса {0}")
-    @Tag("regress")
     void searchBar(String value, String result) {
         step("Open page", () -> {
             mainPage.openPage();
@@ -57,7 +56,6 @@ public class ScalableSolutionsTest extends TestBase {
 
     @ValueSource(strings = {"Products and Services", "Sectors", "Blog"})
     @ParameterizedTest(name = "В навигационном панели присутствует элемент {0} для запроса {0}")
-    @Tag("regress")
     void mainPageTest(String header) {
         step("Open page", () -> {
             mainPage.openPage();

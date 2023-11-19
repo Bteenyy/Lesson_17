@@ -49,18 +49,17 @@ ____
 
 ### **Параметры сборки в Jenkins:**
 
-- *browser (браузер, по умолчанию chrome)*
+- *browserName (браузер, по умолчанию chrome)*
 - *browserVersion (версия браузера, по умолчанию 100.0)*
 - *browserSize (размер окна браузера, по умолчанию 1920x1080)*
-- *baseUrl (адрес тестируемого веб-сайта)*
-- *remoteUrl (логин, пароль и адрес удаленного сервера Selenoid)*
+- *selenoidAddress (адрес удаленного сервера Selenoid)*
 
 <a id="console"></a>
 ## Команды для запуска из терминала
 ___
 ***Локальный запуск:***
 ```bash  
-gradle clean X5Group_test
+gradle clean test
 ```
 
 ***Удалённый запуск через Jenkins:***

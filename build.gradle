@@ -33,9 +33,8 @@ dependencies {
     )
 }
 
-tasks.withType(Test).configureEach {
+tasks.withType(Test) {
     systemProperties(System.getProperties())
-    useJUnitPlatform()
 
     testLogging {
         lifecycle {
@@ -45,12 +44,8 @@ tasks.withType(Test).configureEach {
     }
 }
 
-tasks.register('regress', Test) {
-    testLogging {
-        events "passed", "skipped", "failed", "standardOut", "standardError"
-        exceptionFormat "full"
-    }
+tasks.register('scalablesolutions_test', Test) {
     useJUnitPlatform {
-        includeTags("regress")
+        includeTags("scalablesolutions")
     }
 }
