@@ -46,6 +46,6 @@ tasks.withType(Test) {
 
 tasks.register('scalablesolutions_test', Test) {
     useJUnitPlatform {
-        includeTags("scalablesolutions")
+        includeTags("Scalablesolutions")
     }
 }
