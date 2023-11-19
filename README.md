@@ -77,7 +77,7 @@ clean scalablesolutions_test
 "-DbrowserSize=${browserSize}"
 "-DselenoidAddress=${selenoidAddress}"
 ```
-
+<a id="allure"></a>
 ## <img src="media/Icons/Allure.svg" title="Allure Report" width="4%"/> Allure [отчет](https://jenkins.autotests.cloud/job/Lesson_17/12/allure/)
 ### *Основная страница отчёта*
 
