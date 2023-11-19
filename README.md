@@ -65,22 +65,16 @@ gradle clean test
 
 ## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="media/Icons/Allure_TO.svg"> Интеграция с Allure TestOps
 
-На *Dashboard* в <code>Allure TestOps</code> видна статистика количества тестов: сколько из них добавлены и проходятся вручную, сколько автоматизированы. Новые тесты, а так же результаты прогона приходят по интеграции при каждом запуске сборки.
-
+Выполнена интеграция сборки Jenkins с Allure TestOps. Результат выполнения автотестов отображается в Allure TestOps
 <p align="center">
-<img title="Allure TestOps DashBoard" src="media/screens/AllureTestOps.png">
+<img title="Allure TestOps DashBoard" src="media/Screen/Allure_TO.png">
 </p>
 
-### Результат выполнения автотеста
-
-<p align="center">
-<img title="Test Results in Alure TestOps" src="media/screens/allurResults.png">
-</p>
 
 ## <img width="4%" style="vertical-align:middle" title="Jira" src="media/Icons/Jira.svg"> Интеграция с Jira
 
 Реализована интеграция <code>Allure TestOps</code> с <code>Jira</code>, в тикете отображается, какие тест-кейсы были написаны в рамках задачи и результат их прогона.
-
+    
 <p align="center">
 <img title="Jira Task" src="media/screens/Jira.png">
 </p>
