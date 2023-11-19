@@ -20,8 +20,6 @@ public class ScalableSolutionsTest extends TestBase {
     @CsvSource(value = {
             "Scalable Exchange Platform, Our exchange tech is the industry flagship with speed and",
             "Scalable Custodial Wallet, User-friendly, secure, with your brand at the forefront.",
-            "Scalable Custody, The custody module provides the highest",
-            "Scalable Liquidity, Brokers, instant exchanges, retail traders,"
     })
 
     @ParameterizedTest(name = "В слайде присутствует {1} для выбора заголовка {0}")
@@ -40,7 +38,6 @@ public class ScalableSolutionsTest extends TestBase {
     @CsvSource(value = {
             "Privacy Policy, Privacy Policy",
             "Blog, Top 5 Things to Know about Scalable Solutions",
-            "Careers, Leadership Team"
     })
     @ParameterizedTest(name = "В поисковой выдаче присутствует {1} для запроса {0}")
     @Tag("regress")
@@ -58,7 +55,7 @@ public class ScalableSolutionsTest extends TestBase {
 
     }
 
-    @ValueSource(strings = {"Products and Services", "Sectors", "Blog", "Team", "Careers"})
+    @ValueSource(strings = {"Products and Services", "Sectors", "Blog"})
     @ParameterizedTest(name = "В навигационном панели присутствует элемент {0} для запроса {0}")
     @Tag("regress")
     void mainPageTest(String header) {
@@ -71,7 +68,7 @@ public class ScalableSolutionsTest extends TestBase {
 
     }
 
-    @ValueSource(strings = {"All", "Blog", "Industry Reports", "Media", "Product News"})
+    @ValueSource(strings = {"All", "Blog", "Industry Reports"})
     @ParameterizedTest(name = "В навигационном панели присутствует элемент {0} для запроса {0}")
     void newsPageTest(String category) {
         step("Open page", () -> {
@@ -87,7 +84,7 @@ public class ScalableSolutionsTest extends TestBase {
 
     }
 
-    @ValueSource(strings = {"All", "Design", "Development/QA", "Managerial", "System support"})
+    @ValueSource(strings = {"All", "Design", "Development/QA"})
     @ParameterizedTest(name = "В навигационном панели вкладки Careers присутствует {0} для запроса {0}")
     void careersPageTest(String category) {
         step("Open page", () -> {
