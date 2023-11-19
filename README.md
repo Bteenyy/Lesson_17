@@ -10,7 +10,7 @@
 - [Уведомления в Telegram](#-уведомления-в-telegram)
 - [Видео примера запуска тестов в Selenoid](#-видео-примера-запуска-теста-в-selenoid)
 - 
-## :computer: Используемый стек
+## Используемый стек
 
 <p  align="center">
 <a href="https://www.jetbrains.com/idea/"><img width="5%" title="IntelliJ IDEA" src="media/Idea.svg"></a>
@@ -41,28 +41,26 @@
 * Логи браузерной консоли;
 * Видео выполнения автотеста.
 
-## :arrow_forward: Запуск автотестов
+## Запуск автотестов
 
 ### Запуск тестов из терминала
 ```
 gradle clean test
 ```
 При выполнении данной команды в терминале IDE тесты запустятся удаленно в <code>Selenoid</code>.
-
-
-## <img width="5%" title="Jenkins" src="media/Jenkins.svg"> Сборка в Jenkins
-
-Для запуска сборки необходимо перейти в раздел <code>Собрать с параметрами</code> и нажать кнопку <code>Собрать</code>.
+## <img width="5%" title="Jenkins" src="media/Jenkins.svg"> Удаленный запуск (в Jenkins):
 <p align="center">
-<img title="Jenkins Build" src="media/screens/jenkins.png">
+<img title="Jenkins Build" src="media/jenkins.png">
 </p>
-После выполнения сборки, в блоке <code>История сборок</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
 
-## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logo/Allure_Report.svg"> Пример Allure-отчета
-### Overview
+- Открыть [Проект](https://jenkins.autotests.cloud/job/Lesson_17/)
+- Нажать **Build with Parameters**
+- Результат запуска сборки можно посмотреть в отчёте Allure
+
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/Allure.svg"> Пример Allure-отчета
 
 <p align="center">
-<img title="Allure Overview" src="media/screens/allure.png">
+<img title="Allure Overview" src="media/allure_report.png">
 </p>
 
 ## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="media/logo/AllureTestOps.svg"> Интеграция с Allure TestOps
@@ -87,17 +85,17 @@ gradle clean test
 <img title="Jira Task" src="media/screens/Jira.png">
 </p>
 
-### <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
+### <img width="4%" style="vertical-align:middle" title="Telegram" src="media/Telegram.svg"> Уведомление от Telegram бота
 
 После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне тестов.
 
 <p align="center">
-<img width="70%" title="Telegram Notifications" src="media/screens/Bot.png">
+<img width="70%" title="Telegram Notifications" src="media/Telegram_report.png">
 </p>
 
-### <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/logo/Selenoid.svg"> Видео примера запуска тестов в Selenoid
+### <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/Selenoid.svg"> Видео примера запуска тестов в Selenoid
 
 В отчетах Allure для каждого теста прикреплен не только скриншот, но и видео прохождения теста
 <p align="center">
-  <img title="Selenoid Video" src="media/screens/Video.gif">
+  <img title="Selenoid Video" src="media/Video_report.gif">
 </p>
