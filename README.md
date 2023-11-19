@@ -7,7 +7,7 @@
 - [Пример Allure-отчета](#-Пример-allure-отчета)
 - [Интеграция с Allure TestOps](#-интеграция-с-allure-testOps)
 - [Уведомления в Telegram](#-уведомления-в-telegram)
-- [Видео примера запуска тестов в Selenoid](#-видео-примера-запуска-теста-в-selenoid)
+- - [Видео примера запуска тестов в Selenoid](#-видео-примера-запуска-теста-в-selenoid)
 
 ## :computer: Использованный стек технологий
 
@@ -79,7 +79,7 @@ gradle clean test
 <img width="70%" title="Telegram Notifications" src="media/Screen/Telegram_report.png">
 </p>
 
-### <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/Icons/Selenoid.svg"> Видео примера запуска тестов в Selenoid
+### <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/Icons/Selenoid.svg">Видео примера запуска тестов в Selenoid
 
 В отчетах Allure для каждого теста прикреплен не только скриншот, но и видео прохождения теста
 <p align="center">
