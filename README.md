@@ -71,17 +71,17 @@ ${TASK}
 <img title="Jenkins Build" src="media/Screen/Jenkins.png">
 </p>
 
-## <img src="media/logo/Allure_Report.svg" title="Allure Report" width="4%"/> Пример [Allure-отчета](https://jenkins.autotests.cloud/job/022_FennyKat-Jenkins-full-project/4/allure/)
+## <img src="media/Icons/Allure.svg" title="Allure Report" width="4%"/> Пример [Allure-отчета](https://jenkins.autotests.cloud/job/Lesson_17/12/allure/)
 ### Overview
 
 <p align="center">
-<img title="Allure Overview" src="media/screens/allureReport.png">
+<img title="Allure Overview" src="media/Screen/Allure_report.png">
 </p>
 
 ### Результат выполнения теста
 
 <p align="center">
-<img title="Test Results in Alure" src="media/screens/ResultTest.png">
+<img title="Test Results in Alure" src="media/Screen/Allure_result.png">
 </p>
 
 ## <img src="media/logo/AllureTestOps.svg" title="Allure TestOps" width="4%"/> Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/3755/dashboards)
