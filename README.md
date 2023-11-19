@@ -18,7 +18,7 @@
 <a href="https://allurereport.org/"><img width="6%" title="Allure Report" src="media/Icons/Allure.svg" alt="Allure_Report"></a>
 <a href="https://qameta.io/"><img width="5%" title="Allure TestOps" src="media/Icons/Allure_TO.svg" alt="AllureTestOps"></a>
 <a href="https://gradle.org/"><img width="6%" title="Gradle" src="media/Icons/Gradle.svg" alt="Gradle"></a>
-<a href="https://junit.org/junit5/docs/current/user-guide/"><img width="6%" title="JUnit5" src="media/Icons/JUnit5.svg" alt="JUnit5"></a>
+<a href="https://junit.org/junit5/docs/current/user-guide/"><img width="6%" title="JUnit5" src="media/Icons/Junit5.svg" alt="JUnit5"></a>
 <a href="https://github.com/"><img width="6%" title="GitHub" src="media/Icons/GitHub.svg" alt="GitHub"></a>
 <a href="https://www.jenkins.io/"><img width="6%" title="Jenkins" src="media/Icons/Jenkins.svg" alt="Jenkins"></a>
 <a href="https://web.telegram.org/"><img width="6%" title="Telegram" src="media/Icons/Telegram.svg" alt="Telegram"></a>
