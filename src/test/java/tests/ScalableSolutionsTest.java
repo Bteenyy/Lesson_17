@@ -10,6 +10,7 @@ import page.NewsPage;
 import page.SearchResultsPage;
 
 import static io.qameta.allure.Allure.step;
+
 @Tag("Scalablesolutions")
 public class ScalableSolutionsTest extends TestBase {
     MainPage mainPage = new MainPage();
