@@ -84,35 +84,27 @@ ${TASK}
 <img title="Test Results in Alure" src="media/Screen/Allure_result.png">
 </p>
 
-## <img src="media/logo/AllureTestOps.svg" title="Allure TestOps" width="4%"/> Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/3755/dashboards)
+## <img src="media/Icons/Allure_TO.svg" title="Allure TestOps" width="4%"/> Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/3755/dashboards)
 
 Выполнена интеграция сборки <code>Jenkins</code> с <code>Allure TestOps</code>.
 Результат выполнения автотестов отображается в <code>Allure TestOps</code>
-На Dashboard в <code>Allure TestOps</code> отображена статистика пройденных тестов.
+
 
 <p align="center">
-<img title="Allure TestOps DashBoard" src="media/screens/allureAutotestCloud.png">
+<img title="Allure TestOps DashBoard" src="media/Screen/Allure_TO.png">
 </p>
 
-## <img src="media/logo/Jira.svg" title="Jira" width="4%"/> Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-934)
-
-Реализована интеграция <code>Allure TestOps</code> с <code>Jira</code>, в тикете отображается информация, какие тест-кейсы были написаны в рамках задачи и результат их прогона.
-
-<p align="center">
-<img title="Jira Task" src="media/screens/jiraTask.png">
-</p>
-
-## <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
+## <img width="4%" style="vertical-align:middle" title="Telegram" src="media/Icons/Telegram.svg"> Уведомления в Telegram с использованием бота
 
 После завершения сборки, бот созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с результатом.
 
 <p align="center">
-<img width="70%" title="Telegram Notifications" src="media/screens/notification.png">
+<img width="70%" title="Telegram Notifications" src="media/Screen/Telegram_report.png">
 </p>
 
-## <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/logo/Selenoid.svg">Видео примера запуска тестов в Selenoid
+## <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/Icons/Selenoid.svg">Видео примера запуска тестов в Selenoid
 
 К каждому тесту в отчете прилагается видео прогона.
 <p align="center">
-  <img title="Selenoid Video" src="/media/screens/video.gif">
+  <img title="Selenoid Video" src="/media/Screen/Video_report.gif">
 </p>
