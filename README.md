@@ -13,18 +13,18 @@
 ## Используемый стек
 
 <p  align="center">
-<a href="https://www.jetbrains.com/idea/"><img width="5%" title="IntelliJ IDEA" src="media/Idea.svg"></a>
-<a href="https://www.java.com/"><img width="5%" title="Java" src="media/Java.svg"></a>
-<a href="https://selenoid.autotests.cloud/"><img width="5%" title="Selenoid" src="media/Selenoid.svg"></a>
-<a href="https://selenide.org/"><img width="5%" title="Selenide" src="media/Selenide.svg"></a>
-<a href="https://gradle.org/"><img width="5%" title="Gradle" src="media/Gradle.svg"></a>
-<a href="https://junit.org/junit5/"><img width="5%" title="Junit5" src="media/Junit5.svg"></a>
-<a href="https://github.com/"><img width="5%" title="GitHub" src="media/GitHub.svg"></a>
-<a href="https://allurereport.org/"><img width="5%" title="Allure Report" src="media/Allure.svg"></a>
-<a href="https://qameta.io/"><img width="5%" title="Allure TestOps" src="media/Allure_TO.svg"></a>
-<a href="https://www.jenkins.io/"><img width="5%" title="Jenkins" src="media/Jenkins.svg"></a>
-<a href="https://www.atlassian.com/ru/software/jira"><img width="5%" title="Jira" src="media/Jira.svg"></a>
-<a href="https://web.telegram.org/"><img width="5%" title="Telegram" src="media/Telegram.svg"></a>
+<a href="https://www.jetbrains.com/idea/"><img width="5%" title="IntelliJ IDEA" src="media/Icons/Idea.svg"></a>
+<a href="https://www.java.com/"><img width="5%" title="Java" src="media/Icons/Java.svg"></a>
+<a href="https://selenoid.autotests.cloud/"><img width="5%" title="Selenoid" src="media/Icons/Selenoid.svg"></a>
+<a href="https://selenide.org/"><img width="5%" title="Selenide" src="media/Icons/Selenide.svg"></a>
+<a href="https://gradle.org/"><img width="5%" title="Gradle" src="media/Icons/Gradle.svg"></a>
+<a href="https://junit.org/junit5/"><img width="5%" title="Junit5" src="media/Icons/Junit5.svg"></a>
+<a href="https://github.com/"><img width="5%" title="GitHub" src="media/Icons/GitHub.svg"></a>
+<a href="https://allurereport.org/"><img width="5%" title="Allure Report" src="media/Icons/Allure.svg"></a>
+<a href="https://qameta.io/"><img width="5%" title="Allure TestOps" src="media/Icons/Allure_TO.svg"></a>
+<a href="https://www.jenkins.io/"><img width="5%" title="Jenkins" src="media/Icons/Jenkins.svg"></a>
+<a href="https://www.atlassian.com/ru/software/jira"><img width="5%" title="Jira" src="media/Icons/Jira.svg"></a>
+<a href="https://web.telegram.org/"><img width="5%" title="Telegram" src="media/Icons/Telegram.svg"></a>
 </p>
 
 - Тесты в данном проекте написаны на языке `Java` с использованием фреймворка для тестирования `Selenide`.
@@ -48,19 +48,19 @@
 gradle clean test
 ```
 При выполнении данной команды в терминале IDE тесты запустятся удаленно в <code>Selenoid</code>.
-## <img width="5%" title="Jenkins" src="media/Jenkins.svg"> Удаленный запуск (в Jenkins):
+## <img width="5%" title="Jenkins" src="media/Icons/Jenkins.svg"> Удаленный запуск (в Jenkins):
 <p align="center">
-<img title="Jenkins Build" src="media/jenkins.png">
+<img title="Jenkins Build" src="media/Screen/Jenkins.png">
 </p>
 
 - Открыть [Проект](https://jenkins.autotests.cloud/job/Lesson_17/)
 - Нажать **Build with Parameters**
 - Результат запуска сборки можно посмотреть в отчёте Allure
 
-## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/Allure.svg"> Пример Allure-отчета
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/Icons/Allure.svg"> Пример Allure-отчета
 
 <p align="center">
-<img title="Allure Overview" src="media/allure_report.png">
+<img title="Allure Overview" src="media/Screen/allure_report.png">
 </p>
 
 ## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="media/logo/AllureTestOps.svg"> Интеграция с Allure TestOps
