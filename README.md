@@ -59,31 +59,37 @@ ____
 ___
 ***Локальный запуск:***
 ```bash  
-gradle clean test
+gradle clean scalablesolutions_test
 ```
 
 ***Удалённый запуск через Jenkins:***
 ```bash  
-clean X5Group_test
-"-Dbrowser=${browser}"
+clean scalablesolutions_test
+"-DbrowserName=${browserName}"
 "-DbrowserVersion=${browserVersion}"
 "-DbrowserSize=${browserSize}"
-"-DbaseUrl=${baseUrl}"
-"-DremoteUrl=${remoteUrl}"
+"-DselenoidAddress=${selenoidAddress}"
 ```
-___
 
-## <img src="media/Icons/Allure.svg" title="Allure Report" width="4%"/> Пример [Allure-отчета](https://jenkins.autotests.cloud/job/Lesson_17/12/allure/)
-### Overview
+## <img src="media/Icons/Allure.svg" title="Allure Report" width="4%"/> Allure [отчет](https://jenkins.autotests.cloud/job/Lesson_17/12/allure/)
+### Основная страница отчёта
 
 <p align="center">
 <img title="Allure Overview" src="media/Screen/Allure_report.png">
 </p>
 
-### Результат выполнения теста
+### Тест-кейсы
 
 <p align="center">
 <img title="Test Results in Alure" src="media/Screen/Allure_result.png">
+</p>
+
+### Графики
+
+  <p align="center">  
+<img title="Allure Graphics" src="media/Screen/Gra_1.png" width="850">
+
+<img title="Allure Graphics" src="media/Screen/Gra_2.png" width="850">  
 </p>
 
 ## <img src="media/Icons/Allure_TO.svg" title="Allure TestOps" width="4%"/> Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/3755/dashboards)
