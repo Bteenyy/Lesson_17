@@ -39,37 +39,40 @@
 * Логи браузерной консоли;
 * Видео выполнения автотеста.
 
-## :arrow_forward: Запуск автотестов
-
-### Запуск тестов из терминала
-```
-gradle clean test
-```
-### Запуск тестов на удаленном браузере
-```
-gradle clean test -Denv=main
-```
-При необходимости также можно переопределить параметры запуска
-
-```
-clean 
-${TASK}
--DbrowserName=${browserName}
--DbrowserVersion=${browserVersion}
--DbrowserSize=${browserSize}
--DselenoidAddress=${selenoidAddress}
-```
-
-### Параметры сборки
-* <code>selenoidAddress</code> – адрес удаленного сервера, на котором будут запускаться тесты.
-* <code>browserName</code> – браузер, в котором будут выполняться тесты. По-умолчанию - <code>chrome</code>.
-* <code>browserVersion</code> – версия браузера, в которой будут выполняться тесты. По-умолчанию - <code>100.0</code>.
-* <code>browserSize</code> – размер окна браузера, в котором будут выполняться тесты. По-умолчанию - <code>1920x1080</code>.
-
-## <img src="media/Icons/Jenkins.svg" title="Jenkins" width="4%"/> Сборка в [Jenkins](https://jenkins.autotests.cloud/job/Lesson_17/)
-<p align="center">
-<img title="Jenkins Build" src="media/Screen/Jenkins.png">
+<a id="jenkins"></a>
+## <img alt="Jenkins" height="25" src="media/Icons/Jenkins.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/Lesson_17/)</a>
+____
+<p align="center">  
+<a href="https://jenkins.autotests.cloud/job/Lesson_17/"><img src="media/Screen/Jenkins.png" alt="Jenkins" width="950"/></a>  
 </p>
+
+
+### **Параметры сборки в Jenkins:**
+
+- *browser (браузер, по умолчанию chrome)*
+- *browserVersion (версия браузера, по умолчанию 100.0)*
+- *browserSize (размер окна браузера, по умолчанию 1920x1080)*
+- *baseUrl (адрес тестируемого веб-сайта)*
+- *remoteUrl (логин, пароль и адрес удаленного сервера Selenoid)*
+
+<a id="console"></a>
+## Команды для запуска из терминала
+___
+***Локальный запуск:***
+```bash  
+gradle clean X5Group_test
+```
+
+***Удалённый запуск через Jenkins:***
+```bash  
+clean X5Group_test
+"-Dbrowser=${browser}"
+"-DbrowserVersion=${browserVersion}"
+"-DbrowserSize=${browserSize}"
+"-DbaseUrl=${baseUrl}"
+"-DremoteUrl=${remoteUrl}"
+```
+___
 
 ## <img src="media/Icons/Allure.svg" title="Allure Report" width="4%"/> Пример [Allure-отчета](https://jenkins.autotests.cloud/job/Lesson_17/12/allure/)
 ### Overview
