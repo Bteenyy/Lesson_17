@@ -85,17 +85,17 @@ gradle clean test
 <img title="Jira Task" src="media/screens/Jira.png">
 </p>
 
-### <img width="4%" style="vertical-align:middle" title="Telegram" src="media/Telegram.svg"> Уведомление от Telegram бота
+### <img width="4%" style="vertical-align:middle" title="Telegram" src="media/Icons/Telegram.svg"> Уведомление от Telegram бота
 
 После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне тестов.
 
 <p align="center">
-<img width="70%" title="Telegram Notifications" src="media/Telegram_report.png">
+<img width="70%" title="Telegram Notifications" src="media/Screen/Telegram_report.png">
 </p>
 
-### <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/Selenoid.svg"> Видео примера запуска тестов в Selenoid
+### <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/Icons/Selenoid.svg"> Видео примера запуска тестов в Selenoid
 
 В отчетах Allure для каждого теста прикреплен не только скриншот, но и видео прохождения теста
 <p align="center">
-  <img title="Selenoid Video" src="media/Video_report.gif">
+  <img title="Selenoid Video" src="media/Screen/Video_report.gif">
 </p>
