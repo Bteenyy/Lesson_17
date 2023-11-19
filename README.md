@@ -1,15 +1,15 @@
 # Проект по автоматизации тестовых сценариев для сайта компании [Scalable](https://scalablesolutions.io/)
 ## Содержание:
 
-- [Используемый стек](#-Используемый-стек)
-- [Запуск автотестов](#-Запуск-автотестов)
-- [Сборка в Jenkins](#-сборка-в-jenkins)
+- [Используемый стек](#computer-использованный-стек-технологий)
+- [Запуск автотестов](#arrow_forward-запуск-тестов-из-терминала)
+- [Сборка в Jenkins](#сборка-в-jenkins)
 - [Пример Allure-отчета](#-Пример-allure-отчета)
 - [Интеграция с Allure TestOps](#-интеграция-с-allure-testOps)
 - [Уведомления в Telegram](#-уведомления-в-telegram)
 - [Видео примера запуска тестов в Selenoid](#-видео-примера-запуска-теста-в-selenoid)
 
-## Используемый стек
+## :computer: Использованный стек технологий
 
 <p  align="center">
 <a href="https://www.jetbrains.com/idea/"><img width="5%" title="IntelliJ IDEA" src="media/Icons/Idea.svg"></a>
@@ -39,14 +39,14 @@
 * Логи браузерной консоли;
 * Видео выполнения автотеста.
 
-## Запуск автотестов
+## :arrow_forward: Запуск автотестов
 
 ### Запуск тестов из терминала
 ```
 gradle clean test
 ```
 При выполнении данной команды в терминале IDE тесты запустятся удаленно в <code>Selenoid</code>.
-## <img width="5%" title="Jenkins" src="media/Icons/Jenkins.svg"> Удаленный запуск (в Jenkins):
+## <img width="5%" title="Jenkins" src="media/Icons/Jenkins.svg"> Сборка в [Jenkins](https://jenkins.autotests.cloud/job/Lesson_17/)
 <p align="center">
 <img title="Jenkins Build" src="media/Screen/Jenkins.png">
 </p>
