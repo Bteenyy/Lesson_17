@@ -72,19 +72,19 @@ clean scalablesolutions_test
 ```
 
 ## <img src="media/Icons/Allure.svg" title="Allure Report" width="4%"/> Allure [отчет](https://jenkins.autotests.cloud/job/Lesson_17/12/allure/)
-### Основная страница отчёта
+### *Основная страница отчёта*
 
 <p align="center">
 <img title="Allure Overview" src="media/Screen/Allure_report.png">
 </p>
 
-### Тест-кейсы
+### *Тест-кейсы*
 
 <p align="center">
 <img title="Test Results in Alure" src="media/Screen/Allure_result.png">
 </p>
 
-### Графики
+### *Графики*
 
   <p align="center">  
 <img title="Allure Graphics" src="media/Screen/Gra_1.png" width="850">
@@ -93,14 +93,18 @@ clean scalablesolutions_test
 </p>
 
 ## <img src="media/Icons/Allure_TO.svg" title="Allure TestOps" width="4%"/> Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/3755/dashboards)
+### *Allure TestOps Dashboard*
 
-Выполнена интеграция сборки <code>Jenkins</code> с <code>Allure TestOps</code>.
-Результат выполнения автотестов отображается в <code>Allure TestOps</code>
+<p align="center">  
+<img title="Allure TestOps Dashboard" src="media/Screen/Dashboards.png" width="850">  
+</p> 
 
+### *Авто тест-кейсы*
 
-<p align="center">
-<img title="Allure TestOps DashBoard" src="media/Screen/Allure_TO.png">
+<p align="center">  
+<img title="Allure TestOps Tests" src="media/Screen/Allure_TO.png" width="850">  
 </p>
+
 
 ## <img width="4%" style="vertical-align:middle" title="Telegram" src="media/Icons/Telegram.svg"> Уведомления в Telegram с использованием бота
 
