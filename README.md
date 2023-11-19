@@ -6,7 +6,6 @@
 - [Сборка в Jenkins](#-сборка-в-jenkins)
 - [Пример Allure-отчета](#-пример-allure-отчета)
 - [Интеграция с Allure TestOps](#-интеграция-с-allure-testOps)
-- [Интеграция с Jira](#-интеграция-с-jira)
 - [Уведомления в Telegram](#-уведомления-в-telegram)
 - [Видео примера запуска тестов в Selenoid](#-видео-примера-запуска-теста-в-selenoid)
 - 
@@ -23,7 +22,6 @@
 <a href="https://allurereport.org/"><img width="5%" title="Allure Report" src="media/Icons/Allure.svg"></a>
 <a href="https://qameta.io/"><img width="5%" title="Allure TestOps" src="media/Icons/Allure_TO.svg"></a>
 <a href="https://www.jenkins.io/"><img width="5%" title="Jenkins" src="media/Icons/Jenkins.svg"></a>
-<a href="https://www.atlassian.com/ru/software/jira"><img width="5%" title="Jira" src="media/Icons/Jira.svg"></a>
 <a href="https://web.telegram.org/"><img width="5%" title="Telegram" src="media/Icons/Telegram.svg"></a>
 </p>
 
@@ -32,7 +30,7 @@
 - `JUnit 5` задействован в качестве фреймворка модульного тестирования.
 - При прогоне тестов для запуска браузеров используется `Selenoid`.
 - Для удаленного запуска реализована джоба в `Jenkins` с формированием `Allure-отчета` и отправкой результатов в `Telegram` при помощи бота.
-- Так же реализована интеграция с `Allure TestOps` и  `Jira`
+- Так же реализована интеграция с `Allure TestOps`
 
 Содержание Allure-отчета:
 * Шаги теста;
@@ -71,13 +69,7 @@ gradle clean test
 </p>
 
 
-## <img width="4%" style="vertical-align:middle" title="Jira" src="media/Icons/Jira.svg"> Интеграция с Jira
 
-Реализована интеграция <code>Allure TestOps</code> с <code>Jira</code>, в тикете отображается, какие тест-кейсы были написаны в рамках задачи и результат их прогона.
-    
-<p align="center">
-<img title="Jira Task" src="media/screens/Jira.png">
-</p>
 
 ### <img width="4%" style="vertical-align:middle" title="Telegram" src="media/Icons/Telegram.svg"> Уведомление от Telegram бота
 
