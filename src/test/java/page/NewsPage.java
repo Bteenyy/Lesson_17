@@ -11,13 +11,13 @@ public class NewsPage {
             newsPage = $(".container").$(byText("Blog"));
     ;
 
-    public NewsPage openNewsPage() {
+    public NewsPage newsPageOpen() {
         newsPage.click();
         $(".news-content").shouldHave(text("Our Blog"));
         return this;
     }
 
-    public NewsPage blogCategory(String category) {
+    public NewsPage blogCategoryPut(String category) {
         newsCategory.shouldHave(text(category));
         return this;
     }

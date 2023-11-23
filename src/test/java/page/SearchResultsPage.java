@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 public class SearchResultsPage {
     SelenideElement title = $(".entry-title");
 
-    public SearchResultsPage checkResult(String result) {
+    public SearchResultsPage resultCheck(String result) {
         title.shouldHave(Condition.text(result));
         return this;
     }

@@ -10,13 +10,13 @@ public class CareersPage {
     SelenideElement careersPage = $(".container").$(byText("Careers")),
             jobsContent = $(".jobs-content__roles");
 
-    public CareersPage openCareersPage() {
+    public CareersPage careersPageOpen() {
         careersPage.click();
         $("#preview-block").shouldHave(text("Careers at Scalable Solutions"));
         return this;
     }
 
-    public CareersPage careersCategory(String category) {
+    public CareersPage careersCategoryCheck(String category) {
         jobsContent.shouldHave(text(category));
         return this;
     }

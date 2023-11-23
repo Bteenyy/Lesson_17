@@ -26,13 +26,13 @@ public class ScalableSolutionsTest extends TestBase {
     @ParameterizedTest(name = "В слайде присутствует {1} для выбора заголовка {0}")
     void progressSlider(String value, String result) {
         step("Open page", () -> {
-            mainPage.openPage();
+            mainPage.mainPageOpen();
         });
         step("Put value", () -> {
-            mainPage.chooseProgress(value);
+            mainPage.progressChoose(value);
         });
         step("Check result", () -> {
-            mainPage.resultSlider(result);
+            mainPage.resultSliderCheck(result);
         });
     }
 
@@ -43,13 +43,13 @@ public class ScalableSolutionsTest extends TestBase {
     @ParameterizedTest(name = "В поисковой выдаче присутствует {1} для запроса {0}")
     void searchBar(String value, String result) {
         step("Open page", () -> {
-            mainPage.openPage();
+            mainPage.mainPageOpen();
         });
         step("Put value", () -> {
-            mainPage.putSearchBar(value);
+            mainPage.searchBarPut(value);
         });
         step("Check result", () -> {
-            searchResultsPage.checkResult(result);
+            searchResultsPage.resultCheck(result);
         });
 
 
@@ -59,10 +59,10 @@ public class ScalableSolutionsTest extends TestBase {
     @ParameterizedTest(name = "В навигационном панели присутствует элемент {0} для запроса {0}")
     void mainPageTest(String header) {
         step("Open page", () -> {
-            mainPage.openPage();
+            mainPage.mainPageOpen();
         });
         step("Check element", () -> {
-            mainPage.navigationHeader(header);
+            mainPage.navigationHeaderPut(header);
         });
 
     }
@@ -71,13 +71,13 @@ public class ScalableSolutionsTest extends TestBase {
     @ParameterizedTest(name = "В навигационном панели присутствует элемент {0} для запроса {0}")
     void newsPageTest(String category) {
         step("Open page", () -> {
-            mainPage.openPage();
+            mainPage.mainPageOpen();
         });
         step("Open news page", () -> {
-            newsPage.openNewsPage();
+            newsPage.newsPageOpen();
         });
         step("Check element", () -> {
-            newsPage.blogCategory(category);
+            newsPage.blogCategoryPut(category);
         });
 
 
@@ -87,13 +87,13 @@ public class ScalableSolutionsTest extends TestBase {
     @ParameterizedTest(name = "В навигационном панели вкладки Careers присутствует {0} для запроса {0}")
     void careersPageTest(String category) {
         step("Open page", () -> {
-            mainPage.openPage();
+            mainPage.mainPageOpen();
         });
         step("Open careers page", () -> {
-            careersPage.openCareersPage();
+            careersPage.careersPageOpen();
         });
         step("Check element", () -> {
-            careersPage.careersCategory(category);
+            careersPage.careersCategoryCheck(category);
         });
 
 

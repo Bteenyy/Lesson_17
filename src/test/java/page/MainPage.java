@@ -15,28 +15,28 @@ public class MainPage {
             slider = $("#products-slider");
 
 
-    public MainPage openPage() {
+    public MainPage mainPageOpen() {
         open("");
         blockTitle.shouldHave(text("Scalable Products"));
         return this;
     }
 
-    public MainPage navigationHeader(String header) {
+    public MainPage navigationHeaderPut(String header) {
         navigationList.shouldHave(text(header));
         return this;
     }
 
-    public MainPage putSearchBar(String value) {
+    public MainPage searchBarPut(String value) {
         searchForm.setValue(value).pressEnter();
         return this;
     }
 
-    public MainPage chooseProgress(String value) {
+    public MainPage progressChoose(String value) {
         progressbar.$(byText(value)).click();
         return this;
     }
 
-    public MainPage resultSlider(String result) {
+    public MainPage resultSliderCheck(String result) {
         slider.shouldHave(text(result));
         return this;
     }
