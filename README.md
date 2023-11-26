@@ -66,7 +66,11 @@ ____
 ___
 ***Локальный запуск:***
 ```bash  
-gradle clean scalablesolutions_test
+gradle clean scalablesolutions_test -Dlaunch=local
+```
+***Удаленный запуск в Selenoid:***
+```bash  
+gradle clean scalablesolutions_test -Dlaunch=remote
 ```
 
 ***Удалённый запуск через Jenkins:***
