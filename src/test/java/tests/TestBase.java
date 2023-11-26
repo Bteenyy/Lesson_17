@@ -25,7 +25,7 @@ public class TestBase {
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.browserVersion = System.getProperty("browserVersion", config.version());
         Configuration.pageLoadStrategy = "eager";
-        if (config.getRemote() != null) {
+        if (config.getRemoteUrl() != null) {
             Configuration.remote = config.getRemoteUrl();
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("selenoid:options", Map.<String, Object>of(
