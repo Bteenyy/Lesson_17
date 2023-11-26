@@ -28,8 +28,8 @@ public class TestBase {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
-                "enableVNC", false,
-                "enableVideo", false
+                "enableVNC", true,
+                "enableVideo", true
         ));
         Configuration.browserCapabilities = capabilities;
     }
@@ -39,7 +39,7 @@ public class TestBase {
         Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
         Attach.browserConsoleLogs();
-        Attach.addVideo();
+      //  Attach.addVideo();
         closeWebDriver();
     }
 }
