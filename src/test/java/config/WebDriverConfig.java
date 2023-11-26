@@ -15,8 +15,12 @@ public interface WebDriverConfig extends Config {
     @Key("version")
     @DefaultValue("100.0")
     String version();
+
     @Key("baseUrl")
     String baseUrl();
+
+    @Key("remote")
+    String getRemote();
 
     @Key("remoteUrl")
     String getRemoteUrl();
