@@ -19,8 +19,6 @@ public interface WebDriverConfig extends Config {
     @Key("baseUrl")
     String baseUrl();
 
-    @Key("remote")
-    String getRemote();
 
     @Key("remoteUrl")
     String getRemoteUrl();
