@@ -21,7 +21,7 @@ public class TestBase {
         WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
         Configuration.baseUrl = "https://scalablesolutions.io/";
         Configuration.browser = System.getProperty("browserName", config.browser());
-        Configuration.browserSize = System.getProperty("browserSize", config.size());
+        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.browserVersion = System.getProperty("browserVersion", config.version());
         Configuration.pageLoadStrategy = "eager";
         Configuration.remote = System.getProperty("selenoidAddress",config.getRemoteUrl());
