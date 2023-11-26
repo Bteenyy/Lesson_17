@@ -64,16 +64,16 @@ ____
 <a id="console"></a>
 ## Команды для запуска из терминала
 ___
-***Локальный запуск:***
+***Локальный запуск :***
 ```bash  
 gradle clean scalablesolutions_test -Dlaunch=local
 ```
-***Удаленный запуск в Selenoid:***
+***Удаленный запуск в Selenoid :***
 ```bash  
 gradle clean scalablesolutions_test -Dlaunch=remote
 ```
 
-***Удалённый запуск через Jenkins:***
+***Удалённый запуск через Jenkins :***
 ```bash  
 clean scalablesolutions_test
 "-DbrowserName=${browserName}"
