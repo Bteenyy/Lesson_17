@@ -3,7 +3,7 @@ package config;
 import org.aeonbits.owner.Config;
 
 @Config.Sources({
-        "classpath:config/${launch}.properties"
+        "classpath:${launch}.properties"
 })
 public interface WebDriverConfig extends Config {
 
