@@ -16,10 +16,10 @@ import java.util.Map;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class TestBase {
+    static WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
 
     @BeforeAll
     static void beforeAll() {
-        WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
         Configuration.baseUrl = System.getProperty("baseUrl", config.baseUrl());
         Configuration.browser = System.getProperty("browserName", config.browser());
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
@@ -46,7 +46,9 @@ public class TestBase {
         Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
         Attach.browserConsoleLogs();
-        Attach.addVideo();
+        if (config.getRemoteUrl() != null) {
+            Attach.addVideo();
+        }
         closeWebDriver();
     }
 }
