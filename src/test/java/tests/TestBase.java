@@ -19,7 +19,7 @@ public class TestBase {
     @BeforeAll
     static void beforeAll() {
         WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
-        Configuration.baseUrl = "https://scalablesolutions.io/";
+        Configuration.baseUrl = System.getProperty("baseUrl",config.baseUrl());
         Configuration.browser = System.getProperty("browserName", config.browser());
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.browserVersion = System.getProperty("browserVersion", config.version());
