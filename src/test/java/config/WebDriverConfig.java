@@ -17,6 +17,7 @@ public interface WebDriverConfig extends Config {
     String version();
 
     @Key("baseUrl")
+    @DefaultValue("https://scalablesolutions.io/")
     String baseUrl();
 
 
